@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string-array name="main_lists">
-        <item>第一讲：activity的生命周期和启动模式</item>
-    </string-array>
-
-</resources>
