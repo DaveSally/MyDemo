@@ -6,3 +6,4 @@
 ## 随笔目录
 
 [第一讲：activity的生命周期和启动模式](https://www.jianshu.com/p/1309a38f33d7)
+
