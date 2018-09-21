@@ -2,7 +2,8 @@
 <resources>
 
     <string-array name="main_lists">
-        <item>第一讲：activity的生命周期和启动模式</item>
+        <item>第一课：activity的生命周期和启动模式</item>
+        <item>第二课：约束布局(ConstraintLayout)</item>
     </string-array>
 
 </resources>

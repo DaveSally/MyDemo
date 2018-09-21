@@ -13,6 +13,12 @@ import android.widget.TextView;
 
 import com.dave.mydemo.R;
 
+/**
+ * @author : dave on 2018/9/12 15:10:29
+ * e-mail  : dave.dai@morningtech.com
+ * desc    : description
+ * version : version
+ */
 public class FirstActivity extends AppCompatActivity {
 
     public static final String TAG = "FirstActivity";

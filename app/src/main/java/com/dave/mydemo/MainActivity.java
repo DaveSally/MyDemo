@@ -8,7 +8,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.dave.mydemo.LessonOne.FirstActivity;
+import com.dave.mydemo.LessonTwo.ThirdActivity;
 
+/**
+ * @author : dave on 2018/9/12 15:02:32
+ * e-mail  : dave.dai@morningtech.com
+ * desc    : description
+ * version : version
+ */
 public class MainActivity extends ListActivity {
 
     @Override
@@ -43,6 +50,7 @@ public class MainActivity extends ListActivity {
      * 把每个activity转成xxx.class
      */
     private static final DemoInfo[] DEMOS = {
-            new DemoInfo(FirstActivity.class)
+            new DemoInfo(FirstActivity.class),
+            new DemoInfo(ThirdActivity.class)
     };
 }
