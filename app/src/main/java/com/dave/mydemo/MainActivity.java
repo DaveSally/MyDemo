@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.dave.mydemo.LessonOne.FirstActivity;
-import com.dave.mydemo.LessonTwo.ThirdActivity;
+import com.dave.mydemo.Lesson1.FirstActivity;
+import com.dave.mydemo.Lesson2.ThirdActivity;
+import com.dave.mydemo.Lesson3.FourActivity;
 
 /**
  * @author : dave on 2018/9/12 15:02:32
@@ -51,6 +52,7 @@ public class MainActivity extends ListActivity {
      */
     private static final DemoInfo[] DEMOS = {
             new DemoInfo(FirstActivity.class),
-            new DemoInfo(ThirdActivity.class)
+            new DemoInfo(ThirdActivity.class),
+            new DemoInfo(FourActivity.class)
     };
 }

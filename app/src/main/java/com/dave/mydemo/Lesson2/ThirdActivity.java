@@ -1,4 +1,4 @@
-package com.dave.mydemo.LessonTwo;
+package com.dave.mydemo.Lesson2;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

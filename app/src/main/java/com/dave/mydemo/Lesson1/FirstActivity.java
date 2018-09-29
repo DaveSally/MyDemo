@@ -1,39 +1,52 @@
-package com.dave.mydemo.LessonOne;
+package com.dave.mydemo.Lesson1;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.dave.mydemo.R;
 
 /**
- * @author : dave on 2018/9/12 15:16:44
+ * @author : dave on 2018/9/12 15:10:29
  * e-mail  : dave.dai@morningtech.com
  * desc    : description
  * version : version
  */
-public class SecondActivity extends AppCompatActivity {
+public class FirstActivity extends AppCompatActivity {
 
-    public static final String TAG = "SecondActivity";
+    public static final String TAG = "FirstActivity";
 
     //创建
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_secend);
+        setContentView(R.layout.activity_first);
         //初始化一些总体资源比如setContentView或者加载一些关于这个Activity的全局数据
         Log.e(TAG, "onCreate");
 
-        Button tvJumpSecond = findViewById(R.id.tv_first);
+        Button tvJumpSecond = findViewById(R.id.tv_jump_second);
         tvJumpSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SecondActivity.this, FirstActivity.class));
+                startActivity(new Intent(FirstActivity.this, SecondActivity.class));
+            }
+        });
+
+        Button tvChange = findViewById(R.id.tv_change);
+        tvChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isLandscape(FirstActivity.this)) {
+                    setProtrait();
+                } else if (isPortrait(FirstActivity.this)) {
+                    setLandscape();
+                }
             }
         });
     }
@@ -90,5 +103,33 @@ public class SecondActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState, outPersistentState);
         //自动保存activity中的某些状态数据
         Log.e(TAG, "onSaveInstanceState");
+    }
+
+    /**
+     * 是横屏？
+     */
+    public static boolean isLandscape(Context context) {
+        return context.getResources().getConfiguration().orientation == 2;
+    }
+
+    /**
+     * 是竖屏？
+     */
+    public static boolean isPortrait(Context context) {
+        return context.getResources().getConfiguration().orientation == 1;
+    }
+
+    /**
+     * 设置横屏
+     */
+    private void setLandscape() {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+    }
+
+    /**
+     * 设置竖屏
+     */
+    private void setProtrait() {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 }

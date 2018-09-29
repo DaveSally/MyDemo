@@ -19,14 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LessonOne.FirstActivity"
-            android:launchMode="singleTask" />
-
-        <activity android:name=".LessonOne.SecondActivity" />
-
-        <activity android:name=".LessonTwo.ThirdActivity" />
-
+        <activity android:name=".Lesson1.FirstActivity" />
+        <activity android:name=".Lesson1.SecondActivity" />
+        <activity android:name=".Lesson2.ThirdActivity" />
+        <activity android:name=".Lesson3.FourActivity" />
     </application>
 
 </manifest>
