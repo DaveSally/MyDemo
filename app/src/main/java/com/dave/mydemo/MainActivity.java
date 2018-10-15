@@ -53,6 +53,7 @@ public class MainActivity extends ListActivity {
     private static final DemoInfo[] DEMOS = {
             new DemoInfo(FirstActivity.class),
             new DemoInfo(ThirdActivity.class),
+            new DemoInfo(FourActivity.class),
             new DemoInfo(FourActivity.class)
     };
 }
