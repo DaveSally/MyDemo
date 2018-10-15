@@ -6,4 +6,6 @@
 ## 随笔目录
 
 [第一讲：activity的生命周期和启动模式](https://www.jianshu.com/p/1309a38f33d7)
+[第一讲：约束布局(ConstraintLayout)](https://www.jianshu.com/p/d6e950211f4b)
+[第一讲：RecyclerView第一弹-多视图布局](https://www.jianshu.com/p/c531994cd302)
 
